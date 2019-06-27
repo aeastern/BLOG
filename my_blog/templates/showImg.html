@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+<!-- 写入 base.html 中定义的 content -->
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片展示</title>
+</head>
+<body>
+    {% for bbb in imgs %}
+        <img src="{{ bbb.img_url.url }}" style="max-width: 20%; border-radius: 15%;"><br/>
+    {% endfor %}
+</body>
+</html>
+{% endblock content %}
